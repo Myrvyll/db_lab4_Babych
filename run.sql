@@ -1,15 +1,15 @@
 ----------------------------------------------
 -- Перевірка роботи функції
--- SELECT * FROM get_overview('Adelie Penguin (Pygoscelis adeliae)')
+-- SELECT * FROM get_overview('Gentoo penguin (Pygoscelis papua)')
 
 ----------------------------------------------
 -- Перевірка роботи процедури
--- CALL get_number_of_full_clutches('Biscoe');
+-- CALL get_number_of_full_clutches('Dream');
 
 
 ----------------------------------------------
 -- Перевірка роботи триггера
--- Варіант UPDATE з адекватними даними, які будуть оновлені без проблем
+-- Варіант UPDATE з додатними даними, які будуть оновлені без проблем
 ----------------------------
 -- UPDATE PenguinRecords
 -- SET culmen_length = 39.1,
@@ -19,7 +19,7 @@
 -- WHERE sample_number = 1 AND species = 'Adelie Penguin (Pygoscelis adeliae)';
 
 
--- Варіант UPDATE з неадекватними даними, замість яких з'являться null
+-- Варіант UPDATE з недодатними даними, замість яких з'являться null
 ----------------------------
 -- UPDATE PenguinRecords
 -- SET culmen_length = -85,
@@ -48,4 +48,4 @@
 
 
 -- Для перегляду результатів
--- select * from penguinrecords ORDER BY species, sample_number;
+select * from penguinrecords ORDER BY species, sample_number;
