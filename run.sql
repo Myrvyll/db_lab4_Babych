@@ -4,7 +4,7 @@
 
 ----------------------------------------------
 -- Перевірка роботи процедури
-
+-- CALL get_number_of_full_clutches('Biscoe');
 
 
 ----------------------------------------------
@@ -48,4 +48,4 @@
 
 
 -- Для перегляду результатів
-select * from penguinrecords ORDER BY species, sample_number;
+-- select * from penguinrecords ORDER BY species, sample_number;
