@@ -8,7 +8,7 @@ LANGUAGE 'plpgsql'
 AS $$
 BEGIN
     RETURN QUERY
-        SELECT AVG(body_mass), AVG(flipper_length), AVG(culmen_length), AVG(average_culmen_depth)
+        SELECT AVG(body_mass), AVG(flipper_length), AVG(culmen_length), AVG(culmen_depth)
         FROM PenguinRecords
         WHERE species = penguin_species;
 END;
